@@ -20,14 +20,14 @@ header {
 
 .site-name {
     color: #FFF8F4;
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     margin-left: auto;
 }
 
 .images {
     width: 3rem;
     height: 3rem;
-    
+
 }
 
 .icons {
@@ -41,4 +41,131 @@ header {
 
 .info-img {
     margin-left: 0.5rem;
+}
+
+
+/* Main path */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #FFF8F4;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-name {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #5A351F;
+    margin-bottom: 1rem;
+}
+
+
+
+.product-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 0.5rem;
+}
+
+.product-description {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-family: 'Inter', sans-serif;
+    color: #5A351F;
+    margin-bottom: 0.6rem;
+}
+
+.product-price {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 850;
+    font-family: 'Inter', sans-serif;
+    color: #5A351F;
+    margin-bottom: 0.5rem;
+}
+
+/* Add to Cart Button */
+
+.add-to-cart {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3.5rem;
+    width: 5rem;
+    background-color: #5A351F;
+    color: #FFF8F4;
+    font-size: 1.2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    border-color: #5A351F;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.add-to-cart span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.add-to-cart span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.add-to-cart:hover span {
+    padding-right: 25px;
+}
+
+.add-to-cart:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.add-to-cart:active {
+    transform: scale(0.96);
+    box-shadow: 0 2px 8px rgba(90, 53, 31, 0.15);
+}
+
+/* Timer */
+
+.product-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: 'Inter', sans-serif;
+    color: #5A351F;
+    margin-top: 1rem;
 }
