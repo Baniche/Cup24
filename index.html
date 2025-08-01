@@ -10,8 +10,9 @@
 </head>
 
 <body>
+
     <header>
-        <a class="info icons" href="#"><img class="images info-img" src="./src/info-img.png"></a>
+        <a class="info icons" href="#about-us"><img class="images info-img" src="./src/info-img.png"></a>
         <h1 class="site-name">Cup24</h1>
         <div class="user-cart">
             <a class="cart icons" href="#"><img class="images cart-img" src="./src/cart-img.png"></a>
@@ -22,14 +23,28 @@
         <div class="container">
             <div class="product">
                 <h2 class="product-name">ОДНА КРУЖКА НА ДЕНЬ</h2>
-                <img class="product-img" src="./src/image 1.png" alt="Product Image">
+                <img class="product-img" src="./src/image-cup.png" alt="Product Image">
                 <p class="product-description">Кружка з монстиком</p>
                 <span class="product-price">250 грн</span>
-                <p class="product-timer">До завершення пропозиції: 15:32:17</p>
+                <div class="product-timer">
+                    <p>До завершення пропозиції: <span id="days">00</span>:<span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span></p>       
+                </div>
                 <a href="#" class="add-to-cart"><span class="button-text">Купити</span></a>
             </div>
 
+            <div class="about-us" id="about-us">
+                <h2 class="about-us-title">Про нас</h2>
+                <p class="about-us-text">Ми - команда Cup24, яка створює унікальні кружки з монстиками. Наша мета -
+                    зробити кожен день особливим, даруючи вам радість від використання наших продуктів.</p>
+                <p class="about-us-text">Кожна кружка - це не просто посуд, а маленький витвір мистецтва, який приносить
+                    усмішку та позитивні емоції.</p>
+                <a href="#" class="learn-more"><span class="button-text">Дізнатися більше</span></a>
+            </div>
+        </div>
+   
+   
+
+    <script src="script.js"></script>
 </body>
-<script src="./src/script.js"></script>
 
 </html>
