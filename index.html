@@ -73,70 +73,92 @@
                         <div class="busket"><i class="fa-solid fa-cart-shopping"></i></div>
                     </div>
                 </article>
+                <button id="openModalBtn" class="buy-button">
+                    Купити
+                </button>
+
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                        <h2>Введіть ваше ім'я</h2>
+                        <input type="text" placeholder="Введіть данні для зв'язку">
+                        <button id="submitBtn" class="submit-button">Відправити</button>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="coffee-section" id="action">
-        <h2 class="coffee-title">Наші кавові чашки</h2>
-        
-        <div class="coffee-container">
-            <!-- Додаємо кілька чашок -->
-            <img src="https://images.unsplash.com/photo-1722096944770-4f518f07b947?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Чашка 1" class="coffee-cup active">
-            <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Чашка 2" class="coffee-cup">
-            <img src="https://images.unsplash.com/photo-1506372023823-741c83b836fe?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Чашка 3" class="coffee-cup">
-            <img src="https://images.unsplash.com/photo-1582550906297-e6a12142a60e?q=80&w=465&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D " alt="Чашка 4" class="coffee-cup">
-            <img src="https://images.unsplash.com/photo-1748190994065-0f27b8967390?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Чашка 5" class="coffee-cup">
-        </div>
-        
-        <p class="coffee-text">Насолоджуйтесь свіжою кавою</p>
-        <div class="timer">01:00</div>
-        <p class="timer-description">До наступної чашки</p>
-    </section>
-    <!-- Секція "Про нас" -->
-    <section class="about-section" id="about-us">
-        <div class="about__container">
-            <h2>Про Нашу Кав'ярню</h2>
-            
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Ми - сімейна кав'ярня, яка працює на ринку вже понад 10 років. Наша місія - дарувати вам незабутні кавові моменти щодня.</p>
-                    
-                    <p>Усі наші зерна вирощуються на екологічно чистих плантаціях Бразилії, Колумбії та Ефіопії. Ми ретельно обираємо постачальників і слідкуємо за якістю на кожному етапі - від збору урожаю до чашки у вашій руці.</p>
-                    
-                    <p>Наші баристи - справжні професіонали, які пройшли навчання у кращих кавових школах Європи. Вони знають, як розкрити унікальний смак кожної кавової зернинки.</p>
+            <h2 class="coffee-title">Наші кавові чашки</h2>
+
+            <div class="coffee-container">
+                <!-- Додаємо кілька чашок -->
+                <img src="https://images.unsplash.com/photo-1722096944770-4f518f07b947?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Чашка 1" class="coffee-cup active">
+                <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Чашка 2" class="coffee-cup">
+                <img src="https://images.unsplash.com/photo-1506372023823-741c83b836fe?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Чашка 3" class="coffee-cup">
+                <img src="https://images.unsplash.com/photo-1582550906297-e6a12142a60e?q=80&w=465&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D "
+                    alt="Чашка 4" class="coffee-cup">
+                <img src="https://images.unsplash.com/photo-1748190994065-0f27b8967390?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Чашка 5" class="coffee-cup">
+            </div>
+
+            <p class="coffee-text">Насолоджуйтесь свіжою кавою</p>
+            <div class="timer">01:00</div>
+            <p class="timer-description">До наступної чашки</p>
+        </section>
+        <!-- Секція "Про нас" -->
+        <section class="about-section" id="about-us">
+            <div class="about__container">
+                <h2>Про Нашу Кав'ярню</h2>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Ми - сімейна кав'ярня, яка працює на ринку вже понад 10 років. Наша місія - дарувати вам
+                            незабутні кавові моменти щодня.</p>
+
+                        <p>Усі наші зерна вирощуються на екологічно чистих плантаціях Бразилії, Колумбії та Ефіопії. Ми
+                            ретельно обираємо постачальників і слідкуємо за якістю на кожному етапі - від збору урожаю
+                            до чашки у вашій руці.</p>
+
+                        <p>Наші баристи - справжні професіонали, які пройшли навчання у кращих кавових школах Європи.
+                            Вони знають, як розкрити унікальний смак кожної кавової зернинки.</p>
+                    </div>
+
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1567880905822-56f8e06fe630?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Наша кав'ярня">
+                    </div>
                 </div>
-                
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1567880905822-56f8e06fe630?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Наша кав'ярня">
+
+                <div class="about-features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <h3>Якісна кава</h3>
+                        <p>Використовуємо тільки 100% арабіку з екологічних плантацій</p>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>Професійні баристи</h3>
+                        <p>Наші фахівці пройшли навчання у кращих кавових школах</p>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>З любов'ю</h3>
+                        <p>Готуємо кожну чашку з турботою та увагою до деталей</p>
+                    </div>
                 </div>
             </div>
-            
-            <div class="about-features">
-                <div class="feature">
-                    <div class="feature-icon">
-                        <i class="fas fa-coffee"></i>
-                    </div>
-                    <h3>Якісна кава</h3>
-                    <p>Використовуємо тільки 100% арабіку з екологічних плантацій</p>
-                </div>
-                
-                <div class="feature">
-                    <div class="feature-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <h3>Професійні баристи</h3>
-                    <p>Наші фахівці пройшли навчання у кращих кавових школах</p>
-                </div>
-                
-                <div class="feature">
-                    <div class="feature-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3>З любов'ю</h3>
-                    <p>Готуємо кожну чашку з турботою та увагою до деталей</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
     </main>
 
     <script src="script.js"></script>

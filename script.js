@@ -1,3 +1,27 @@
+// Отримання елементів DOM
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("openModalBtn");
+        var span = document.getElementsByClassName("close-button")[0];
+
+        // Коли користувач клікає на кнопку, відкривається модальне вікно
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // Коли користувач клікає на (x), закривається модальне вікно
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Коли користувач клікає будь-де поза межами модального вікна, воно закривається
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const images = document.querySelectorAll('.slider img');
     let currentIndex = 0;
